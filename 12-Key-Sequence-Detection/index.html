@@ -6,9 +6,28 @@
   <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
 </head>
 <body>
+
+  <h1>Type the word:</h1>
+  <h2>nick</h2>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      z-index: 9999;
+    }
+    h2 {
+      color: red;
+    }
+  </style>
+
 <script>
+
   const pressed = [];
-  const secretCode = 'prinkle';
+  const secretCode = 'nick';
 
   window.addEventListener('keyup', (e) => {
     pressed.push(e.key.toLowerCase());
@@ -17,6 +36,7 @@
       cornify_add();
     }
   })
+
 </script>
 </body>
 </html>
