@@ -43,7 +43,7 @@
       // const height = hero.offsetHeight;
     let { offsetX: x, offsetY: y } = e;
 
-    // fixes issue with e.target vs. the element we are hovering
+    // fixes issue with e.target vs. the element we are hovering nested elements
     if (this !== e.target) {
       x = x + e.target.offsetLeft;
       y = y + e.target.offsetTop;
