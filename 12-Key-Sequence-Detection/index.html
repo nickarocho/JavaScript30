@@ -27,7 +27,7 @@
 <script>
 
   const pressed = [];
-  const secretCode = 'nick';
+  const secretCode = 'arrowup';
 
   window.addEventListener('keyup', (e) => {
     pressed.push(e.key.toLowerCase());
@@ -35,6 +35,7 @@
     if (pressed.join('').includes(secretCode)) {
       cornify_add();
     }
+    console.log(pressed);
   })
 
 </script>
